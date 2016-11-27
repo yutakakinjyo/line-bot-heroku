@@ -20,5 +20,5 @@ You must prepare follows before depoying.
 
 # Development
 
-Ther is [LINE Messaging API](https://developers.line.me/messaging-api/overview)
+Ther is [LINE Messaging API](https://developers.line.me/messaging-api/overview)  
 This repository use [line_bot-sdk-ruby](https://github.com/line/line-bot-sdk-ruby)
