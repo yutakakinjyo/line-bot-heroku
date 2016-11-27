@@ -2,13 +2,18 @@ GEM
   remote: https://rubygems.org/
   specs:
     line-bot-api (1.0.0)
+    power_assert (0.4.1)
     rack (1.6.5)
     rack-protection (1.5.3)
       rack
+    rack-test (0.6.3)
+      rack (>= 1.0)
     sinatra (1.4.7)
       rack (~> 1.5)
       rack-protection (~> 1.4)
       tilt (>= 1.3, < 3)
+    test-unit (3.2.3)
+      power_assert
     tilt (2.0.5)
 
 PLATFORMS
@@ -16,7 +21,9 @@ PLATFORMS
 
 DEPENDENCIES
   line-bot-api
+  rack-test
   sinatra
+  test-unit
 
 BUNDLED WITH
    1.13.6
