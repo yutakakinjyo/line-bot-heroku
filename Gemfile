@@ -5,3 +5,4 @@ gem "sinatra"
 gem 'line-bot-api'
 gem 'rack-test'
 gem 'test-unit'
+gem 'webmock'

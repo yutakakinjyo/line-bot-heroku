@@ -3,6 +3,7 @@ ENV['RACK_ENV'] = 'test'
 require './app'
 require 'test/unit'
 require 'rack/test'
+require 'webmock/test_unit'
 
 class LineTest < Test::Unit::TestCase
   include Rack::Test::Methods
@@ -17,6 +18,9 @@ class LineTest < Test::Unit::TestCase
   end
 
   def test_it_echo
+
+    uri_template = Addressable::Template.new Line::Bot::API::DEFAULT_ENDPOINT + '/message/reply'
+    stub_request(:post, uri_template)
     
     ENV["LINE_CHANNEL_SECRET"] = "secret"
 
