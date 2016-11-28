@@ -5,7 +5,7 @@ require 'test/unit'
 require 'rack/test'
 require 'webmock/test_unit'
 
-class LineTest < Test::Unit::TestCase
+class AppTest < Test::Unit::TestCase
   include Rack::Test::Methods
 
   def app
